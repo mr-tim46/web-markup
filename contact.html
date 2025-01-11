@@ -1,90 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Tim Defourny" />
+    <meta
+      name="description"
+      content="Discover the top 3 bars and clubs in Haarlem, along with honorable mentions, for an unforgettable nightlife experience!"
+    />
+    <meta
+      name="keywords"
+      content="Haarlem bars, Haarlem nightlife, top clubs Haarlem, best bars Haarlem, nightlife guide Haarlem"
+    />
     <title>Contact</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Jomhuria&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+    <link rel="icon" href="media/drinks.png" type="image/x-icon" />
+  </head>
 
-</head>
-<body>
+  <body>
     <header>
-        <nav>
-            <a href="index.html">
-                <img src="media/logo.png" alt="Haarlem After Dark Logo" title="Haarlem After Dark">
-            </a>
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="detail1.html">STUDIO</a></li>
-                <li><a href="detail2.html">PATRONAAT</a></li>
-                <li><a href="detail3.html">BAJA</a></li>
-                <li><a href="detail4.html">MORE</a></li>
-                <li><a href="contact.html" aria-current="page">CONTACT</a></li>
-            </ul>            
-        </nav>
+      <nav>
+        <a href="index.html">
+          <img
+            src="media/logo.png"
+            alt="Haarlem After Dark Logo"
+            title="Haarlem After Dark"
+          />
+        </a>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="detail1.html">STUDIO</a></li>
+          <li><a href="detail2.html">PATRONAAT</a></li>
+          <li><a href="detail3.html">BAJA</a></li>
+          <li><a href="detail4.html">MORE</a></li>
+          <li><a href="contact.html" aria-current="page">CONTACT</a></li>
+        </ul>
+      </nav>
     </header>
-    
 
     <main>
-        <section class="honorable-mentions"> 
-            <h2>Get In Touch</h2>
-            <p>
-                Have any questions or need more information? We’d love 
-                to hear from you! Whether you're curious about our
-                 recommendations, upcoming events, or just want to share your
-                  thoughts, feel free to reach out. Fill out the form below and 
-                  we’ll get back to you as soon as possible.
-            </p>
-        </section>
+      <section class="honorable-mentions">
+        <h2>Get In Touch</h2>
+        <p>
+          Have any questions or need more information? We’d love to hear from
+          you! Whether you're curious about our recommendations, upcoming
+          events, or just want to share your thoughts, feel free to reach out.
+          Fill out the form below &amp; we’ll get back to you as soon as
+          possible.
+        </p>
+      </section>
 
+      <form class="contact-form">
+        <p class="contact-form-required">Fields labeled with * are required</p>
+        <span class="formdouble">
+          <label class="contact-form-label double">
+            <p>Title*:</p>
+            <span class="contact-form-radio-group">
+              <input
+                type="radio"
+                name="title"
+                value="Mr."
+                id="contact-form-mr"
+              />
+              <label for="contact-form-mr">Mr.</label>
+              <input
+                type="radio"
+                name="title"
+                value="Ms."
+                id="contact-form-ms"
+              />
+              <label for="contact-form-ms">Ms.</label>
+            </span>
+          </label>
 
-        <form class="contact-form">
-            <p class="contact-form-required">Fields labeled with * are required</p>
-    
-            <label class="contact-form-label">
-                Title*:
-                <span class="contact-form-radio-group">
-                    <input type="radio" name="title" value="Mr." id="contact-form-mr">
-                    <label for="contact-form-mr">Mr.</label>
-                    <input type="radio" name="title" value="Ms." id="contact-form-ms">
-                    <label for="contact-form-ms">Ms.</label>
-                </span>
-            </label>
-    
-            <label class="contact-form-label">
-                Name*:
-                <input type="text" name="name" class="contact-form-input" placeholder="Enter your name here" required>
-            </label>
-    
-            <label class="contact-form-label">
-                Email*:
-                <input type="email" name="email" class="contact-form-input" placeholder="Enter your email here" required>
-            </label>
-    
-            <label class="contact-form-label">
-                Phone:
-                <input type="tel" name="phone" class="contact-form-input" placeholder="Enter your phone number">
-            </label>
-    
-            <label class="contact-form-label">
-                Message:
-                <textarea name="message" class="contact-form-textarea" placeholder="Type your message here"></textarea>
-            </label>
-    
-            <button type="submit" class="read-more-btn">Submit</button>
-        </form>
+          <label class="contact-form-label double">
+            Name*:
+            <input
+              type="text"
+              name="name"
+              class="contact-form-input"
+              placeholder="Enter your name here"
+              required
+            />
+          </label>
+        </span>
 
+        <span class="formdouble">
+          <label class="contact-form-label double">
+            Email*:
+            <input
+              type="email"
+              name="email"
+              class="contact-form-input"
+              placeholder="Enter your email here"
+              required
+            />
+          </label>
+
+          <label class="contact-form-label double">
+            Phone:
+            <input
+              type="tel"
+              name="phone"
+              class="contact-form-input"
+              placeholder="Enter your phone number"
+            />
+          </label>
+        </span>
+
+        <fieldset class="message">
+          <legend>Your message:</legend>
+          <label class="contact-form-label">
+            <textarea
+              name="message"
+              class="contact-form-textarea"
+              placeholder="Type your message here"
+            ></textarea>
+          </label>
+        </fieldset>
+
+        <span class="submit">
+          <button type="submit" class="read-more-btn">Submit</button>
+        </span>
+      </form>
     </main>
 
     <footer>
-        <figure>
-            <img src="media/logo.png" alt="Haarlem After Dark Logo" title="Haarlem After Dark">
-            <figcaption>
-                <a href="contact.html" class="contact-btn">CONTACT</a>
-            </figcaption>
-        </figure>
-        <p>&copy; 2024, All rights reserved</p>
+      <figure>
+        <img src="media/logo.png" alt="Haarlem After Dark Logo" title="logo" />
+        <figcaption>
+          <a href="contact.html" class="contact-btn">CONTACT &reg;</a>
+        </figcaption>
+      </figure>
+      <aside>
+        <p>&copy; 2024, All rights reserved &trade;</p>
+        <p>
+          Haarlem After Dark accepts all currencies, including &pound; (GBP),
+          &euro; (EUR), and &dollar; (USD).
+        </p>
+      </aside>
     </footer>
-</body>
+  </body>
 </html>
