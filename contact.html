@@ -27,8 +27,54 @@
     
 
     <main>
-        <h1>home page</h1>
-        <p>and stuff</p>
+        <section class="honorable-mentions"> 
+            <h2>Get In Touch</h2>
+            <p>
+                Have any questions or need more information? We’d love 
+                to hear from you! Whether you're curious about our
+                 recommendations, upcoming events, or just want to share your
+                  thoughts, feel free to reach out. Fill out the form below and 
+                  we’ll get back to you as soon as possible.
+            </p>
+        </section>
+
+
+        <form class="contact-form">
+            <p class="contact-form-required">Fields labeled with * are required</p>
+    
+            <label class="contact-form-label">
+                Title*:
+                <span class="contact-form-radio-group">
+                    <input type="radio" name="title" value="Mr." id="contact-form-mr">
+                    <label for="contact-form-mr">Mr.</label>
+                    <input type="radio" name="title" value="Ms." id="contact-form-ms">
+                    <label for="contact-form-ms">Ms.</label>
+                </span>
+            </label>
+    
+            <label class="contact-form-label">
+                Name*:
+                <input type="text" name="name" class="contact-form-input" placeholder="Enter your name here" required>
+            </label>
+    
+            <label class="contact-form-label">
+                Email*:
+                <input type="email" name="email" class="contact-form-input" placeholder="Enter your email here" required>
+            </label>
+    
+            <label class="contact-form-label">
+                Phone:
+                <input type="tel" name="phone" class="contact-form-input" placeholder="Enter your phone number">
+            </label>
+    
+            <label class="contact-form-label">
+                Message:
+                <textarea name="message" class="contact-form-textarea" placeholder="Type your message here"></textarea>
+            </label>
+    
+            <button type="submit" class="read-more-btn">Submit</button>
+        </form>
+
     </main>
 
     <footer>
